@@ -1,28 +1,41 @@
+*,
+::after::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f7f3cc;
+    background: linear-gradient(to right, #FFFDD0  , #B0D99A );
     justify-content: center;
     align-items: center;
     height: 100vh; /* Preenche toda a altura da tela */
     margin: 0;
-    padding-bottom: 600px; /* Adiciona 50px de espaço no final */
+    padding-bottom: 500px; /* Adiciona 50px de espaço no final */
 
 }
+
+h2 {font-size: 18px;}
+
+h3 {font-weight: normal;}
 
 /* Estilo do container que engloba a imagem e o texto */
 .container {
     display: flex;
-    background-color: #fff;
     padding-right: 90px;
     padding-left: 90px;
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 15px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 50px;
+    margin: 8px;
 }
 
 .container-1 {
-    background-color: #fff;
+    background-color: white;
     display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -49,7 +62,7 @@ body {
     border-radius: 50%; /* Deixa a imagem em formato circular */
     object-fit: cover; /* Garante que a imagem se ajuste corretamente dentro do círculo */
     margin-right: 20px;
-    border: 3px solid #3498db; /* Adiciona uma borda à imagem */
+    border: 3px solid #4F7705; /* Adiciona uma borda à imagem */
 }
 
 /* Estilizando o conteúdo ao lado da imagem */
@@ -69,7 +82,6 @@ h1 {
 /* Estilo para o efeito de digitação */
 .efeitos {
     margin-top: 10px;
-    font-family: 'Courier New', Courier, monospace; /* Fonte de estilo "coding" */
     white-space: nowrap; /* Evita que o texto quebre em várias linhas */
     border-right: 3px solid; /* Cria o cursor piscante */
     animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
@@ -89,7 +101,6 @@ h1 {
 
 
 footer {
-    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -116,4 +127,42 @@ footer {
     width: 30px;
     height: 30px;
     vertical-align: middle;
+}
+
+
+nav {
+    margin: 50px auto;
+    text-align: center; /* Centraliza o menu */
+}
+
+.menu-horizontal {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Garante que os itens fiquem alinhados no centro */
+}
+
+.menu-horizontal li {
+    margin-right: 20px; /* Espaço entre os itens do menu */
+}
+
+.menu-horizontal li:last-child {
+    margin-right: 0; /* Remove o espaçamento do último item */
+}
+
+.menu-horizontal a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-horizontal a:hover {
+    background-color: #4F7705;
+    color: white;
 }

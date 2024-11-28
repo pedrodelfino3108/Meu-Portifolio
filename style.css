@@ -1,9 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f7f3cc;
+    background: linear-gradient(to right, #FFFDD0  , #B0D99A );
+    margin: 0;
     justify-content: center;
     align-items: center;
+    color: #333;
 }
+
 
 header {
     text-align: right;
@@ -12,7 +15,11 @@ header {
 
 h1 {
     font-size: 50px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Troca o cursor para a mãozinha ao passar o mouse */
+    transition: color 0.3s ease, transform 0.3s ease; /* Animações suaves */
 }
+
 
 div {
     margin-top: 130px;
@@ -48,9 +55,10 @@ padding-left: 20px;}
 }
 
 .lista-personalizada li:hover {
-    color: #3498db; /* Muda a cor do texto ao passar o mouse */
+    color: white; /* Muda a cor do texto ao passar o mouse */
     text-decoration: underline; /* Adiciona um sublinhado */
     transform: scale(1.05); /* Aumenta levemente o tamanho do item */
+    text-decoration: none;
 }
 
 
